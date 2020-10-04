@@ -1,22 +1,20 @@
 <!--
-title: 'Serverless Nodejs Rest API with TypeScript And MongoDB Atlas'
-description: 'This is simple REST API example for AWS Lambda By Serverless framwork with TypeScript and MongoDB Atlas.'
+title: 'Serverless Nodejs Rest API with TypeScript'
+description: 'This is smart health const REST API for AWS Lambda By Serverless framwork with TypeScript.'
 layout: Doc
 framework: v1
 platform: AWS
 language: nodeJS
-authorLink: 'https://github.com/Q-Angelo'
-authorName: 'May Jun'
-authorAvatar: 'https://avatars0.githubusercontent.com/u/17956058?s=460&u=f3acebabd097e6e93d5be5a8366b980fea5b15aa&v=4'
+authorLink: 'https://github.com/karthiksugar'
+authorName: 'Karthikeyan'
 -->
-# Serverless Nodejs Rest API with TypeScript And MongoDB Atlas
+# Serverless Nodejs Rest API with TypeScript
 
-This is simple REST API example for AWS Lambda By Serverless framwork with TypeScript and MongoDB Atlas.
+This is smart health const REST API for AWS Lambda By Serverless framwork with TypeScript.
 
 ## Use Cases
 
 * REST API with typescript
-* MongoDB Atlas data storage
 * Multi-environment management under Serverless
 * Mocha unit tests and lambda-tester interface test
 * AWS lambda function log view
@@ -77,16 +75,13 @@ Service Information
 service: aws-node-rest-api-typescript
 stage: dev
 region: us-east-1
-stack: aws-node-rest-api-typescript-dev
+stack: smart-health-consulting-api
 resources: 32
 api keys:
   None
 endpoints:
-  POST - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books
-  PUT - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books/{id}
-  GET - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books
-  GET - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books/{id}
-  DELETE - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books/{id}
+  GET - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/testapi
+  POST - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/login  
 functions:
   create: aws-node-rest-api-typescript-dev-create
   update: aws-node-rest-api-typescript-dev-update
