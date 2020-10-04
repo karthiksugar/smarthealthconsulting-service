@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "local": "serverless offline",
-    "deploy": "serverless deploy",
+    "deploy": "serverless deploy && set NODE_OPTIONS=--max_old_space_size=4096",
     "test": "cross-env NODE_ENV=dev mocha -r ts-node/register tests/*.test.ts --exit",
     "coverage": "nyc --reporter lcov npm run test"
   },
